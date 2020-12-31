@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c9c02fa-5bb1-4f17-9ef2-27131d4992ff" name="Default Changelist" comment="Wykład 2">
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ppf_lab6_7_repelowicz.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="7c9c02fa-5bb1-4f17-9ef2-27131d4992ff" name="Default Changelist" comment="Wykład 2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +75,7 @@
       <updated>1608669956346</updated>
       <workItem from="1608669958354" duration="121000" />
       <workItem from="1608670142722" duration="600000" />
-      <workItem from="1609441987778" duration="326000" />
+      <workItem from="1609441987778" duration="626000" />
     </task>
     <task id="LOCAL-00001" summary="Wykład 2">
       <created>1609431725986</created>
