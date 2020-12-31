@@ -19,6 +19,7 @@
 .env.production.local
 .idea/*.xml
 .idea/*.iml
+.idea/inspectionProfiles
 
 npm-debug.log*
 yarn-debug.log*
