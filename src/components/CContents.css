@@ -1,0 +1,12 @@
+.contentsFlex {
+    background-color: springgreen;
+    display: flex;
+    margin: 10px;
+}
+.contentsFlexImg {
+    height: 20vmin;
+    width: 25vmin;
+}
+.contentsFlexTxt {
+    text-align: center;
+}
