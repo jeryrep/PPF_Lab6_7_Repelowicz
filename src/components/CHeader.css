@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+}
+.headerLogo {
+    width: 31vmin;
+    height: 15vmin;
+}
+.headerDiv {
+    margin: 0 auto;
+}
+.headerText {
+    flex-grow: 1;
+}
+
+.headerWelcome {
+    flex-grow: 1;
+}

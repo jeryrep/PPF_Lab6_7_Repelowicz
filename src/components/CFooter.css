@@ -1,0 +1,8 @@
+.footer {
+    display: flex;
+    background-color: #3d4151;
+}
+
+.footerText {
+    flex-grow: 1;
+}
