@@ -1,0 +1,12 @@
+.contentsFlex {
+    background-color: #3d4151;
+    display: flex;
+    margin: 10px;
+}
+.contentsFlexImg {
+    height: 20vmin;
+    width: 25vmin;
+}
+.contentsFlexTxt {
+    text-align: center;
+}

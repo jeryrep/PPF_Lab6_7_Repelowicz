@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "img": "coop1",
+      "text": "Politechnika Krakowska im. Tadeusza Kościuszki – publiczna uczelnia o profilu technicznym w Krakowie. W 2018 r. Politechnika Krakowska znalazła się w światowym rankingu najlepszych szkół wyższych w poszczególnych dyscyplinach – Academic Ranking of World Universities (ARWU). Politechnika Krakowska została sklasyfikowana w kategorii „Inżynieria” w dyscyplinie naukowej „Inżynieria chemiczna”. Klasyfikacja w rankingu Szanghajskim 2019, w kategorii Inżynieria mechaniczna."
+    },
+    {
+      "id": 2,
+      "img": "coop2",
+      "text": "Comarch SA – jedna z największych polskich spółek informatycznych z siedzibą w Krakowie założona w 1993 przez profesora Akademii Górniczo-Hutniczej Janusza Filipiaka i jego dwunastu studentów. Janusz Filipiak wraz z żoną Elżbietą Filipiak (przewodniczącą rady nadzorczej) są głównymi akcjonariuszami spółki i posiadane przez nich udziały dają 2/3 głosów na walnym zgromadzeniu akcjonariuszy. Comarch zatrudniał wg stanu na koniec 2019 ponad 6500 osób, w 90 biurach w 34 krajach."
+    },
+    {
+      "id": 3,
+      "img": "coop3",
+      "text": "Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie, AGH (dawniej Akademia Górnicza w Krakowie), nazwa międzynarodowa AGH University of Science and Technology (dawniej University of Mining and Metallurgy) – największa polska uczelnia techniczna, powołana 8 kwietnia 1919 uchwałą Rady Ministrów. Jedna z najlepszych uczelni w Polsce."
+    }
+  ]
+}
