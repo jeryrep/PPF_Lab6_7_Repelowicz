@@ -1,22 +1,12 @@
-import React, {Component} from "react";
+import React from "react";
 import coopInfo from '../res/coop.json';
-import './CCooperation.css';
+import CDisplayContents from "./CDisplayContents";
 
-export class CCooperation extends Component {
-    constructor(props) {
-        super(props);
-        this.coopData = () => JSON.parse(JSON.stringify(coopInfo));
-        const imgContext = require.context('../res/', false, /\.jpg$/);
-        let img = {};
-        this.imgs = imgContext.keys().reduce((icons, file) => {
-            const cname = imgContext(file).default;
-            const label = file.slice(2, -4);
-            img[label] = cname;
-            return img;
-        }, {});
-    }
+export class CCooperation extends CDisplayContents {
+
     render() {
-        const tabData = this.coopData().data;
+        this.initializeJson(coopInfo);
+        const tabData = this.data().data;
         const items = tabData.map((item) => (
             <div id={`"div${item.id}`} className="contentsFlex">
                 <img className="contentsFlexImg" src={this.imgs[item.img]} alt=""/>

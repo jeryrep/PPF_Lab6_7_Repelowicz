@@ -1,25 +1,13 @@
-import React, {Component} from "react";
-import data from '../res/materials.json';
-import './CMaterials.css';
+import React from "react";
+import materialsData from '../res/materials.json';
+import CDisplayContents from "./CDisplayContents";
 
-export class CMaterials extends Component {
-    constructor(props) {
-        super(props);
-        this.materialsData = () => JSON.parse(JSON.stringify(data));
-        const imgContext = require.context('../res/', false, /\.jpg$/);
-        let img = {};
-        this.imgs = imgContext.keys().reduce((icons, file) => {
-            const cname = imgContext(file).default;
-            const label = file.slice(2, -4);
-            img[label] = cname;
-            return img;
-        }, {});
-    }
-
+export class CMaterials extends CDisplayContents {
     render() {
+        this.initializeJson(materialsData);
         const items = [];
-        for (let i = 0; i < this.materialsData().count; i++) {
-            let value = this.materialsData().text[i];
+        for (let i = 0; i < this.data().count; i++) {
+            let value = this.data().text[i];
             items.push(
                 <div className="contentsFlex">
                     <img className="contentsFlexImg" src={this.imgs['material' + (i + 1)]} alt=""/>
