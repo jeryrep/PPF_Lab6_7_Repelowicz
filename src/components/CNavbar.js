@@ -26,6 +26,9 @@ export default class CNavbar extends Component {
                         <Link to="/contact" className="nav-link">
                             Kontakt
                         </Link>
+                        <Link to="sandbox" className="nav-link">
+                            Piaskownica zdarzeń
+                        </Link>
                     </Nav>
                 </Navbar>
             </nav>

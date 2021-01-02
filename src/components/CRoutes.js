@@ -4,6 +4,7 @@ import {CAbout} from "./CAbout";
 import {CMaterials} from "./CMaterials";
 import {CCooperation} from "./CCooperation";
 import {CContact} from "./CContact";
+import CSandbox from "./CSandbox";
 
 export const CRoutes = () => {
     return (
@@ -25,6 +26,9 @@ export const CRoutes = () => {
             </Route>
             <Route exact path="/contact">
                 <CContact/>
+            </Route>
+            <Route exact path="/sandbox">
+                <CSandbox/>
             </Route>
         </Switch>
     );

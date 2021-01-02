@@ -1,7 +1,7 @@
 .contentsFlex {
     background-color: #3d4151;
     display: flex;
-    margin: 10px;
+    margin: 1vmin;
 }
 .contentsFlexImg {
     height: 20vmin;
