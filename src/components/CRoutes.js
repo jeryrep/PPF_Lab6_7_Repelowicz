@@ -1,6 +1,6 @@
 import React from "react";
 import {Route, Switch, Redirect} from "react-router-dom";
-import {CAbout} from "./CAbout";
+import {CHome} from "./CHome";
 import {CMaterials} from "./CMaterials";
 import {CCooperation} from "./CCooperation";
 import {CContact} from "./CContact";
@@ -13,7 +13,7 @@ export const CRoutes = () => {
                 <Redirect to="/home"/>
             </Route>
             <Route exact path="/home">
-                <CAbout/>
+                <CHome/>
             </Route>
             <Route exact path="/materials">
                 <CMaterials/>
@@ -22,7 +22,7 @@ export const CRoutes = () => {
                 <CCooperation/>
             </Route>
             <Route exact path="/about">
-                <CAbout/>
+                <CHome/>
             </Route>
             <Route exact path="/contact">
                 <CContact/>

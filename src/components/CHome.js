@@ -1,7 +1,7 @@
 import React from "react";
 import {CInterestVideo} from "./CInterestVideo";
 
-export const CAbout = () => {
+export const CHome = () => {
     return (
         <CInterestVideo/>
     );

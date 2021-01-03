@@ -39,11 +39,20 @@ export default class CSandbox extends Component {
         document.getElementById("numberInput").style.color = param;
     }
 
-    //onClick, onMouseDown, onMouseOut, onMouseOver, onCopy, onFocus, onBlur, onChange, onSelect, onCut
+    changeTextDrag(param) {
+        document.getElementById("draggable").innerHTML = param;
+    }
+
+    noImage() {
+        document.getElementById("noimg").innerHTML = "<img src='sd.jpg' onerror=\"alert(\'Nie znaleziono pliku'\)\"/>";
+    }
+
+    //1. onClick, 2. onMouseDown, 3. onMouseOut, 4. onMouseOver, 5. onCopy, 6. onFocus, 7. onBlur, 8. onChange, 9. onSelect, 10. onCut, 11. onDragStart, 12. onDrag, 13. onDragEnd, 14. onerror,
+    //15.
 
     render() {
         return (
-            <div>
+            <div id="sandbox" onresize={this.scrollCounter}>
                 <h1 onClick={this.changeTitleColor} id="title">
                     Witam w piaskownicy, można się tutaj pobawić zdarzeniami.
                 </h1>
@@ -54,6 +63,9 @@ export default class CSandbox extends Component {
                 <input type="text" onFocus={() => this.changeBackground("blue")} onBlur={() => this.changeBackground("white")} id="textArea" onChange={() => this.changeBackground("red")}/>
                 <br/>
                 <input type="number" onSelect={() => this.changeFontColor("green")} id="numberInput" onCut={() => this.changeFontColor("red")}/>
+                <p id="draggable" onDragEnd={() => this.changeTextDrag("Skończono")} draggable="true" onDrag={() => this.changeTextDrag("Przenoszę")} onDragStart={() => this.changeTextDrag("Zaczęto przenosić")}>Przykład drag</p>
+                <button onClick={this.noImage}>Kliknij by spróbować wczytać nieznany plik</button>
+                <div id="noimg"></div>
             </div>
         );
     }
