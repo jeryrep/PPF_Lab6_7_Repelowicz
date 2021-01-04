@@ -5,26 +5,24 @@ import {Link} from "react-router-dom";
 import CLoginControl from './CLoginControl'
 
 export default class CHeader extends Component {
-    resizeLogo(param) {
-        let x = document.getElementById("headerLogo");
+    resizeLogo(param, e) {
         if (param === "0") {
-            x.style.width = "33vmin";
-            x.style.height = "16vmin";
+            e.target.style.width = "33vmin";
+            e.target.style.height = "16vmin";
         } else {
-            x.style.width = "31vmin";
-            x.style.height = "15vmin";
+            e.target.style.width = "31vmin";
+            e.target.style.height = "15vmin";
         }
     }
 
-    changeColor(param) {
-        let x = document.getElementById("headerTitle");
+    changeColor(param, e) {
         if (param === "gradient") {
-            x.innerHTML = "E-Techno(logy)";
-            x.style.color = "#" + ((1 << 24) * Math.random() | 0).toString(16);
+            e.target.innerHTML = "E-Techno(logy)";
+            e.target.style.color = "#" + ((1 << 24) * Math.random() | 0).toString(16);
         }
         else {
-            x.innerHTML = "E-Technology";
-            x.style.color = "white";
+            e.target.innerHTML = "E-Technology";
+            e.target.style.color = "white";
         }
     }
 
@@ -32,10 +30,10 @@ export default class CHeader extends Component {
         return (
             <header className="header">
                 <Link to="/home">
-                    <img id="headerLogo" src={logo} alt="logo" className="headerLogo" onMouseOver={() => this.resizeLogo("0")} onMouseOut={() => this.resizeLogo("1")} />
+                    <img id="headerLogo" src={logo} alt="logo" className="headerLogo" onMouseOver={(e) => this.resizeLogo("0", e)} onMouseOut={(e) => this.resizeLogo(null, e)} />
                 </Link>
                 <div className="headerDiv">
-                    <h1 className="headerWelcome" id="headerTitle" onMouseMove={() => this.changeColor("gradient")} onMouseOut={() => this.changeColor(null)}>
+                    <h1 className="headerWelcome" id="headerTitle" onMouseMove={(e) => this.changeColor("gradient", e)} onMouseOut={(e) => this.changeColor(null, e)}>
                         E-Technology
                     </h1>
                     <p className="headerText">

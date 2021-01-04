@@ -14,6 +14,16 @@ export default class CDisplayContents extends Component {
         }, {});
     }
 
+    resizeImage(param, e) {
+        if (param === "enlarge") {
+            e.target.style.height = "30vmin";
+            e.target.style.width = "36vmin";
+        } else {
+            e.target.style.height = "20vmin";
+            e.target.style.width = "23vmin";
+        }
+    }
+
     render() {
         return false;
     }

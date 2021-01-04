@@ -4,7 +4,6 @@ import {CHome} from "./CHome";
 import {CMaterials} from "./CMaterials";
 import {CCooperation} from "./CCooperation";
 import {CContact} from "./CContact";
-import CSandbox from "./CSandbox";
 
 export const CRoutes = () => {
     return (
@@ -20,9 +19,6 @@ export const CRoutes = () => {
             </Route>
             <Route exact path="/cooperation">
                 <CCooperation/>
-            </Route>
-            <Route exact path="/about">
-                <CHome/>
             </Route>
             <Route exact path="/contact">
                 <CContact/>

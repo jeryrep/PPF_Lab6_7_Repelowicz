@@ -30,14 +30,8 @@ export default class CNavbar extends Component {
                         <Link to="/cooperation" className="nav-link">
                             Współpraca
                         </Link>
-                        <Link to="/about" className="nav-link">
-                            O nas
-                        </Link>
                         <Link to="/contact" className="nav-link">
                             Kontakt
-                        </Link>
-                        <Link to="sandbox" className="nav-link">
-                            Piaskownica zdarzeń
                         </Link>
                         <a href="javascript:void(0);" className="icon" onClick={this.responsiveNav}>
                             <i className="fa fa-bars"></i>

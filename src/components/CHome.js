@@ -1,8 +1,8 @@
 import React from "react";
-import {CInterestVideo} from "./CInterestVideo";
+import {CVideoArticle} from "./CVideoArticle";
 
 export const CHome = () => {
     return (
-        <CInterestVideo/>
+        <CVideoArticle/>
     );
 }
