@@ -27,9 +27,6 @@ export const CRoutes = () => {
             <Route exact path="/contact">
                 <CContact/>
             </Route>
-            <Route exact path="/sandbox">
-                <CSandbox/>
-            </Route>
         </Switch>
     );
 }

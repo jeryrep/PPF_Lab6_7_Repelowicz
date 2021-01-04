@@ -1,8 +1,9 @@
 #navigation {
     margin: 1vmin;
-    background-color: #3d4151;
+    background-color: #545970;
     overflow: hidden;
-    position: relative;
+    position: sticky;
+    top: 0;
 }
 
 .navContainer {

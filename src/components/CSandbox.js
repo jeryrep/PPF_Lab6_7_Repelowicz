@@ -44,7 +44,7 @@ export default class CSandbox extends Component {
     }
 
     noImage() {
-        document.getElementById("noimg").innerHTML = "<img src='sd.jpg' onerror=\"console.log(\'Nie znaleziono pliku'\)\" alt='Nie znaleziono pliku'/>";
+        document.getElementById("noimg").innerHTML = "<img src='sd.jpg' onerror=\"console.log('Nie znaleziono pliku')\" alt='Nie znaleziono pliku'/>";
     }
 
     //1. onClick, 2. onMouseDown, 3. onMouseOut, 4. onMouseOver, 5. onCopy, 6. onFocus, 7. onBlur, 8. onChange, 9. onSelect, 10. onCut, 11. onDragStart, 12. onDrag, 13. onDragEnd, 14. onerror,

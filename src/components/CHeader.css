@@ -13,6 +13,12 @@
 }
 
 .headerWelcome {
-    font-size: 4vw;
-    flex-grow: 1;
+    font-size: 6vw;
+}
+
+.headerLogin {
+    margin: 0.5vw;
+    right: 0;
+    display: block;
+    width: 10%;
 }

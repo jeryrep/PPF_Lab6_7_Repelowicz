@@ -1,0 +1,14 @@
+.formContainer {
+    margin: 1vw;
+    text-align: left;
+}
+
+.formText {
+    text-align: center;
+    font-size: 3vw;
+}
+
+.inputText {
+    width: 200px;
+    display: block;
+}

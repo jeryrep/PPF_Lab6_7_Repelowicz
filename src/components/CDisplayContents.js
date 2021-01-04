@@ -13,6 +13,7 @@ export default class CDisplayContents extends Component {
             return img;
         }, {});
     }
+
     render() {
         return false;
     }

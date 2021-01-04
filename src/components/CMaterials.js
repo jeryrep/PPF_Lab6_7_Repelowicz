@@ -10,7 +10,7 @@ export class CMaterials extends CDisplayContents {
             let value = this.data().text[i];
             items.push(
                 <div className="contentsFlex">
-                    <img className="contentsFlexImg" src={this.imgs['material' + (i + 1)]} alt=""/>
+                    <img className="contentsFlexImg" src={this.imgs['material' + (i + 1)]} alt="Logo firmy współpracującej"/>
                     <p className="contentsFlexTxt">
                         {value}
                     </p>
