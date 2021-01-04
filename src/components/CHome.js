@@ -1,4 +1,5 @@
 import React from "react";
+import './CHome.css';
 
 export const CHome = () => {
     return (

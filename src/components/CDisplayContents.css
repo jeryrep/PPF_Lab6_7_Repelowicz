@@ -11,3 +11,9 @@
 .contentsFlexTxt {
     text-align: center;
 }
+
+@media screen and (max-width: 500px){
+    .contentsFlex {
+        display: block;
+    }
+}

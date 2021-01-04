@@ -32,7 +32,7 @@ export class CContact extends React.Component {
         return (
             <article className="formContainer">
                 <p className="formText display-4">
-                    W celu skontaktowania się z naszą firmą wypęlnij poniższe dane kontaktowe
+                    W celu skontaktowania się z naszą firmą wypełnij poniższe dane kontaktowe
                 </p>
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group row">
