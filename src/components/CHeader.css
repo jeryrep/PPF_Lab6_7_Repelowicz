@@ -13,5 +13,6 @@
 }
 
 .headerWelcome {
+    font-size: 4vw;
     flex-grow: 1;
 }

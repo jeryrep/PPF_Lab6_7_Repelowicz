@@ -6,12 +6,22 @@ import './CNavbar.css';
 import { Link } from 'react-router-dom';
 
 export default class CNavbar extends Component {
+
+    responsiveNav() {
+        let x = document.getElementById("topnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
     render() {
         return (
-            <nav className="navigation">
-                <Navbar variant="dark">
-                    <Nav className="mr-auto">
-                        <Link to="/home" className="nav-link">
+            <Navbar variant="dark" id="navigation">
+                <Nav className="mr-auto navContainer">
+                    <div className="topnav" id="topnav">
+                        <Link to="/home" className="nav-link act">
                             Home
                         </Link>
                         <Link to="/materials" className="nav-link">
@@ -29,9 +39,12 @@ export default class CNavbar extends Component {
                         <Link to="sandbox" className="nav-link">
                             Piaskownica zdarzeń
                         </Link>
-                    </Nav>
-                </Navbar>
-            </nav>
+                        <a href="javascript:void(0);" className="icon" onClick={this.responsiveNav}>
+                            <i className="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </Nav>
+            </Navbar>
         );
     }
 }
