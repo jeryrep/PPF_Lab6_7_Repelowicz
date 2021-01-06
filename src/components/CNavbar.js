@@ -5,8 +5,7 @@ import { Nav, Navbar} from "react-bootstrap";
 import './CNavbar.css';
 import { Link } from 'react-router-dom';
 
-export default class CNavbar extends Component {
-
+export class CNavbar extends Component {
     responsiveNav() {
         let x = document.getElementById("topnav");
         if (x.className === "topnav") {
@@ -21,16 +20,16 @@ export default class CNavbar extends Component {
             <Navbar variant="dark" id="navigation">
                 <Nav className="mr-auto navContainer">
                     <div className="topnav" id="topnav">
-                        <Link to="/home" className="nav-link act">
+                        <Link to="/home" className="nav-link act" data-testid="Home">
                             Home
                         </Link>
-                        <Link to="/materials" className="nav-link">
+                        <Link to="/materials" className="nav-link" data-testid="Materials">
                             Materiały
                         </Link>
-                        <Link to="/cooperation" className="nav-link">
+                        <Link to="/cooperation" className="nav-link" data-testid="Coop">
                             Współpraca
                         </Link>
-                        <Link to="/contact" className="nav-link">
+                        <Link to="/contact" className="nav-link" data-testid="Contact">
                             Kontakt
                         </Link>
                         <a href="javascript:void(0);" className="icon" onClick={this.responsiveNav}>

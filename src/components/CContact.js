@@ -34,23 +34,23 @@ export class CContact extends React.Component {
                 <p className="formText display-4">
                     W celu skontaktowania się z naszą firmą wypełnij poniższe dane kontaktowe
                 </p>
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit} data-testid="form">
                     <div className="form-group row">
                         <label htmlFor="name" className="col-sm-2 col-form-label">Imię:</label>
                         <div className="col-sm-10">
-                            <input type="text" className="form-control inputText" placeholder="Jan" required name="name" onChange={this.handleChange}/>
+                            <input type="text" data-testid="name-test" className="form-control inputText" placeholder="Jan" required name="name" onChange={this.handleChange}/>
                         </div>
                     </div>
                     <div className="form-group row">
                         <label htmlFor="surname" className="col-sm-2 col-form-label">Nazwisko:</label>
                         <div className="col-sm-10">
-                            <input type="text" className="form-control inputText" placeholder="Kowalski" required name="surname" value={this.state.surname} onChange={this.handleChange}/>
+                            <input type="text" data-testid="surname-test" className="form-control inputText" placeholder="Kowalski" required name="surname" value={this.state.surname} onChange={this.handleChange}/>
                         </div>
                     </div>
                     <div className="form-group row">
                         <label htmlFor="email" className="col-sm-2 col-form-label">E-mail:</label>
                         <div className="col-sm-10">
-                            <input type="email" className="form-control inputText" placeholder="jan.kowalski@gmail.com" required name="email" value={this.state.email} onChange={this.handleChange}/>
+                            <input type="email" data-testid="email-test" className="form-control inputText" placeholder="jan.kowalski@gmail.com" required name="email" value={this.state.email} onChange={this.handleChange}/>
                         </div>
                     </div>
                     <div className="form-group row">

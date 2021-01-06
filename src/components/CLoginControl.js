@@ -1,60 +1,48 @@
 import React, {Component} from "react";
 import './CLoginControl.css';
+import {Link} from "react-router-dom";
 
 export default class CLoginControl extends Component {
     constructor(props) {
         super(props);
-        this.handleLoginClick = this.handleLoginClick.bind(this);
         this.handleLogoutClick = this.handleLogoutClick.bind(this);
         this.state = {isLoggedIn: false};
     }
 
-    handleLoginClick() {
-        this.setState({isLoggedIn: true});
+    handleLogoutClick() {
+        localStorage.removeItem("log");
+        this.setState({isLoggedIn: false});
+        window.location.reload();
     }
 
-    handleLogoutClick() {
-        this.setState({isLoggedIn: false});
+    componentDidMount() {
+        console.log(localStorage.getItem("log"))
+        if (localStorage.getItem("log"))
+            this.setState({isLoggedIn: true});
     }
 
     render() {
         const isLoggedIn = this.state.isLoggedIn;
-        let button;
-
-        if (isLoggedIn) {
-            button = <LogoutButton onClick={this.handleLogoutClick} />;
-        } else {
-            button = <LoginButton onClick={this.handleLoginClick} />;
-        }
-
         return (
             <div>
-                <Greeting isLoggedIn={isLoggedIn} />
-                {button}
+                {isLoggedIn ? <LogoutButton onClick={this.handleLogoutClick} /> : <LoginButton />}
             </div>
         );
     }
 }
-const UserGreeting = () => <p className="small greeting">Zalogowano</p>;
-
-const GuestGreeting = () => <p className="small greeting">Niezalogowano</p>;
-
-const Greeting = props => {
-    const isLoggedIn = props.isLoggedIn;
-    if (isLoggedIn) {
-        return <UserGreeting />;
-    }
-    return <GuestGreeting />;
-};
 
 const LoginButton = props => (
     <button className="btn btn-dark" onClick={props.onClick}>
-        Login
+        <Link to="/login" className="text-white text-decoration-none">
+            Zaloguj się
+        </Link>
     </button>
 );
 
 const LogoutButton = props => (
     <button className="btn btn-dark" onClick={props.onClick}>
-        Logout
+        <Link to="/login" className="text-white text-decoration-none">
+            Wyloguj się
+        </Link>
     </button>
 );

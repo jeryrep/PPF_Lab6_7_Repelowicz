@@ -30,7 +30,7 @@ export default class CHeader extends Component {
         return (
             <header className="header">
                 <Link to="/home">
-                    <img id="headerLogo" src={logo} alt="logo" className="headerLogo" onMouseOver={(e) => this.resizeLogo("0", e)} onMouseOut={(e) => this.resizeLogo(null, e)} />
+                    <img data-testid="homeRouteLogo" id="headerLogo" src={logo} alt="logo" className="headerLogo" onMouseOver={(e) => this.resizeLogo("0", e)} onMouseOut={(e) => this.resizeLogo(null, e)} />
                 </Link>
                 <div className="headerDiv">
                     <h1 className="headerWelcome" id="headerTitle" onMouseMove={(e) => this.changeColor("gradient", e)} onMouseOut={(e) => this.changeColor(null, e)}>

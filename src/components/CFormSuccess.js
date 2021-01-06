@@ -13,7 +13,7 @@ export class CFormSuccess extends Component {
         };
     }
 
-    static getDerivedStateFromProps(props, state) {
+    static getDerivedStateFromProps(props) {
         console.log("Zapisano dane do states");
         return {
             name: props.name,
@@ -48,7 +48,7 @@ export class CFormSuccess extends Component {
         console.log("Komponent został usunięty");
     }
 
-    validateSentData(props, state) {
+    validateSentData() {
         document.getElementById("result").innerHTML = this.state.name === this.props.name && this.state.surname === this.props.surname && this.state.email === this.props.email ? "Dane zostały poprawnie wysłane. Możesz opuścić stronę." : "Coś poszło nie tak, spróbuj ponownie później.";
     }
 
@@ -56,7 +56,7 @@ export class CFormSuccess extends Component {
         console.log("Renderuję wyjściowy komponent");
         return (
             <article className="formSuccess">
-                <h1>
+                <h1 className="testResult">
                     Dziękujemy za dane {this.props.name} {this.props.surname}!
                 </h1>
                 <p id="thankYouText">
@@ -65,8 +65,8 @@ export class CFormSuccess extends Component {
                 <p>
                     Kliknij poniższy przycisk by sprawdzić poprawność danych.
                 </p>
-                <button className="btn btn-dark" onClick={() => this.validateSentData(this.props, this.state)}>Sprawdź poprawność</button>
-                <p id="result"></p>
+                <button data-testid="Button" className="btn btn-dark" onClick={() => this.validateSentData(this.props, this.state)}>Sprawdź poprawność</button>
+                <p data-testid="Result" id="result"></p>
             </article>
         );
     }

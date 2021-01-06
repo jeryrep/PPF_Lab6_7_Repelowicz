@@ -4,6 +4,7 @@ import {CHome} from "./CHome";
 import {CMaterials} from "./CMaterials";
 import {CCooperation} from "./CCooperation";
 import {CContact} from "./CContact";
+import {CLogin} from "./CLogin";
 
 export const CRoutes = () => {
     return (
@@ -22,6 +23,9 @@ export const CRoutes = () => {
             </Route>
             <Route exact path="/contact">
                 <CContact/>
+            </Route>
+            <Route exact path="/login">
+                {localStorage.getItem("log") ? <Redirect to="home"/> : <CLogin/>}
             </Route>
         </Switch>
     );
