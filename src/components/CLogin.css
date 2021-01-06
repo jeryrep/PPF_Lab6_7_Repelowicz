@@ -1,3 +1,14 @@
 #loginPage {
-    margin: 0 auto;
+    margin: 1vmin;
+}
+
+@media screen and (max-width: 650px) {
+    .inputDiv {
+        text-align: center;
+        display: inline-block;
+        margin: 1vw;
+    }
+    .submitDiv {
+        text-align: center;
+    }
 }

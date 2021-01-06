@@ -43,19 +43,19 @@ export class CLogin extends Component {
         return (
             <article id="loginPage">
                 <form onSubmit={this.handleSubmit} data-testid="form">
-                    <div className="form-group row">
+                    <div className="form-group row inputDiv">
                         <label htmlFor="name" className="col-sm-2 col-form-label">Login:</label>
                         <div className="col-sm-10">
                             <input type="text" className="form-control inputText" placeholder="login" required name="login" onChange={this.handleChange} onBlur={(e) => this.changeInputBackground('white', e)} onFocus={(e) => this.changeInputBackground('lightBlue', e)} onCopy={(e) => this.changeInputBackground('yellow', e)} onPaste={(e) => this.changeInputBackground('lightGreen', e)} onCut={(e) => this.changeInputBackground('lightCoral', e)} onInvalid={(e) => this.changeInputBackground('red', e)}/>
                         </div>
                     </div>
-                    <div className="form-group row">
+                    <div className="form-group row inputDiv">
                         <label htmlFor="surname" className="col-sm-2 col-form-label">Hasło:</label>
                         <div className="col-sm-10">
                             <input type="password" className="form-control inputText" placeholder="password" required name="pass" onChange={this.handleChange} onBlur={(e) => this.changeInputBackground('white', e)} onFocus={(e) => this.changeInputBackground('lightBlue', e)} onPaste={(e) => this.changeInputBackground('lightGreen', e)} onInvalid={(e) => this.changeInputBackground('red', e)}/>
                         </div>
                     </div>
-                    <div className="form-group row">
+                    <div className="form-group row submitDiv">
                         <div className="col-sm-2">
                             <input type="submit" className="btn btn-dark" id="submit" value="Zaloguj się"/>
                         </div>
