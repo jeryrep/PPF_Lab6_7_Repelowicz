@@ -31,6 +31,10 @@ export class CLogin extends Component {
         event.preventDefault();
     }
 
+    changeInputBackground(param, event) {
+        event.target.style.backgroundColor = param;
+    }
+
     render() {
         if (this.state.isLoggedIn){
             window.location.reload();
@@ -42,13 +46,13 @@ export class CLogin extends Component {
                     <div className="form-group row">
                         <label htmlFor="name" className="col-sm-2 col-form-label">Login:</label>
                         <div className="col-sm-10">
-                            <input type="text" className="form-control inputText" placeholder="login" required name="login" onChange={this.handleChange}/>
+                            <input type="text" className="form-control inputText" placeholder="login" required name="login" onChange={this.handleChange} onBlur={(e) => this.changeInputBackground('white', e)} onFocus={(e) => this.changeInputBackground('lightBlue', e)} onCopy={(e) => this.changeInputBackground('yellow', e)} onPaste={(e) => this.changeInputBackground('lightGreen', e)} onCut={(e) => this.changeInputBackground('lightCoral', e)}/>
                         </div>
                     </div>
                     <div className="form-group row">
                         <label htmlFor="surname" className="col-sm-2 col-form-label">Hasło:</label>
                         <div className="col-sm-10">
-                            <input type="password" className="form-control inputText" placeholder="password" required name="pass" onChange={this.handleChange}/>
+                            <input type="password" className="form-control inputText" placeholder="password" required name="pass" onChange={this.handleChange} onBlur={(e) => this.changeInputBackground('white', e)} onFocus={(e) => this.changeInputBackground('lightBlue', e)} onPaste={(e) => this.changeInputBackground('lightGreen', e)}/>
                         </div>
                     </div>
                     <div className="form-group row">

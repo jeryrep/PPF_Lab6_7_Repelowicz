@@ -28,6 +28,10 @@ export class CContact extends React.Component {
         return <CFormSuccess name={this.state.name} surname={this.state.surname} email={this.state.email}/>;
     }
 
+    changeInputBackground(param, event) {
+        event.target.style.backgroundColor = param;
+    }
+
     render() {
         return (
             <article className="formContainer">
@@ -38,19 +42,19 @@ export class CContact extends React.Component {
                     <div className="form-group row">
                         <label htmlFor="name" className="col-sm-2 col-form-label">Imię:</label>
                         <div className="col-sm-10">
-                            <input type="text" data-testid="name-test" className="form-control inputText" placeholder="Jan" required name="name" onChange={this.handleChange}/>
+                            <input type="text" data-testid="name-test" className="form-control inputText" placeholder="Jan" required name="name" onChange={this.handleChange} onBlur={(e) => this.changeInputBackground('white', e)} onFocus={(e) => this.changeInputBackground('lightBlue', e)} onCopy={(e) => this.changeInputBackground('yellow', e)} onPaste={(e) => this.changeInputBackground('lightGreen', e)} onCut={(e) => this.changeInputBackground('lightCoral', e)}/>
                         </div>
                     </div>
                     <div className="form-group row">
                         <label htmlFor="surname" className="col-sm-2 col-form-label">Nazwisko:</label>
                         <div className="col-sm-10">
-                            <input type="text" data-testid="surname-test" className="form-control inputText" placeholder="Kowalski" required name="surname" value={this.state.surname} onChange={this.handleChange}/>
+                            <input type="text" data-testid="surname-test" className="form-control inputText" placeholder="Kowalski" required name="surname" value={this.state.surname} onChange={this.handleChange} onBlur={(e) => this.changeInputBackground('white', e)} onFocus={(e) => this.changeInputBackground('lightBlue', e)} onCopy={(e) => this.changeInputBackground('yellow', e)} onPaste={(e) => this.changeInputBackground('lightGreen', e)} onCut={(e) => this.changeInputBackground('lightCoral', e)}/>
                         </div>
                     </div>
                     <div className="form-group row">
                         <label htmlFor="email" className="col-sm-2 col-form-label">E-mail:</label>
                         <div className="col-sm-10">
-                            <input type="email" data-testid="email-test" className="form-control inputText" placeholder="jan.kowalski@gmail.com" required name="email" value={this.state.email} onChange={this.handleChange}/>
+                            <input type="email" data-testid="email-test" className="form-control inputText" placeholder="jan.kowalski@gmail.com" required name="email" value={this.state.email} onChange={this.handleChange} onBlur={(e) => this.changeInputBackground('white', e)} onFocus={(e) => this.changeInputBackground('lightBlue', e)} onCopy={(e) => this.changeInputBackground('yellow', e)} onPaste={(e) => this.changeInputBackground('lightGreen', e)} onCut={(e) => this.changeInputBackground('lightCoral', e)}/>
                         </div>
                     </div>
                     <div className="form-group row">
