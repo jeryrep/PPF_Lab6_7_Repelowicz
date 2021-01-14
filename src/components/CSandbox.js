@@ -47,9 +47,6 @@ export default class CSandbox extends Component {
         document.getElementById("noimg").innerHTML = "<img src='sd.jpg' onerror=\"console.log('Nie znaleziono pliku')\" alt='Nie znaleziono pliku'/>";
     }
 
-    // onInput 21. onInvalid 22. onDoubleClick 23. onKeyPress
-    //  33. onVolumeChange 34.
-
     render() {
         return (
             <div id="sandbox" onLoad={console.log("Załadowano")}
