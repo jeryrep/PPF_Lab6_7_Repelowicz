@@ -6,18 +6,18 @@ import COuter from "./components/COuter";
 
 
 function App() {
-  return (
-    <div className="App">
-        <CHeader aName="Jerzy" aFamily="Repelowicz"/>
-        <CContents/>
-        <COuter/>
-        <CFooter weather="słoneczna" temp="25">
-            <p>
-                Niebo jest bezchmurne, wiatr słaby.
-            </p>
-        </CFooter>
-    </div>
-  );
+    return (
+        <div className="App">
+            <CHeader aName="Jerzy" aFamily="Repelowicz"/>
+            <CContents/>
+            <COuter/>
+            <CFooter weather="słoneczna" temp="25">
+                <p>
+                    Niebo jest bezchmurne, wiatr słaby.
+                </p>
+            </CFooter>
+        </div>
+    );
 }
 
 export default App;

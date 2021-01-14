@@ -11,6 +11,7 @@ export default class COuter extends Component {
         }
         console.log("COuter - konstruktor");
     }
+
     static getDerivedStateFromProps(props, state) {
         console.log("COuter - getDerivedStateFromProps()");
         return null;

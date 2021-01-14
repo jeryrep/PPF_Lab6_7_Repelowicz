@@ -3,9 +3,7 @@ import React, {Component} from 'react'
 export default class CInner extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-
-        }
+        this.state = {}
         console.log("CInner - konstruktor");
     }
 
