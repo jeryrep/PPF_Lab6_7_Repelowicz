@@ -19,8 +19,7 @@ export default class CHeader extends Component {
         if (param === "gradient") {
             e.target.innerHTML = "E-Techno(logy)";
             e.target.style.color = "#" + ((1 << 24) * Math.random() | 0).toString(16);
-        }
-        else {
+        } else {
             e.target.innerHTML = "E-Technology";
             e.target.style.color = "white";
         }
@@ -30,10 +29,12 @@ export default class CHeader extends Component {
         return (
             <header className="header">
                 <Link to="/home">
-                    <img data-testid="homeRouteLogo" id="headerLogo" src={logo} alt="logo" className="headerLogo" onMouseOver={(e) => this.resizeLogo("0", e)} onMouseOut={(e) => this.resizeLogo(null, e)} />
+                    <img data-testid="homeRouteLogo" id="headerLogo" src={logo} alt="logo" className="headerLogo"
+                         onMouseOver={(e) => this.resizeLogo("0", e)} onMouseOut={(e) => this.resizeLogo(null, e)}/>
                 </Link>
                 <div className="headerDiv">
-                    <h1 className="headerWelcome" id="headerTitle" onMouseMove={(e) => this.changeColor("gradient", e)} onMouseOut={(e) => this.changeColor(null, e)}>
+                    <h1 className="headerWelcome" id="headerTitle" onMouseMove={(e) => this.changeColor("gradient", e)}
+                        onMouseOut={(e) => this.changeColor(null, e)}>
                         E-Technology
                     </h1>
                     <p className="headerText">
@@ -42,7 +43,7 @@ export default class CHeader extends Component {
 
                 </div>
                 <div className="headerLogin">
-                    <CLoginControl />
+                    <CLoginControl/>
                 </div>
             </header>
         );

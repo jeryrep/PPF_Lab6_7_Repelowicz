@@ -11,7 +11,7 @@ export class CFooter extends React.Component {
         return (
             <footer className="footer">
                 <div onMouseEnter={() => this.spinUnspinLogo("1")} onMouseOut={() => this.spinUnspinLogo(null)}>
-                    <img id="reactLogo" src={reactLogo} className="appLogo" alt="logo react" />
+                    <img id="reactLogo" src={reactLogo} className="appLogo" alt="logo react"/>
                 </div>
                 <p className="footerText blockquote-footer">
                     E-Technology, wszystkie prawa zastrzeżone.

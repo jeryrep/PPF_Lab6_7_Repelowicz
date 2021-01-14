@@ -65,7 +65,9 @@ export class CFormSuccess extends Component {
                 <p>
                     Kliknij poniższy przycisk by sprawdzić poprawność danych.
                 </p>
-                <button data-testid="Button" className="btn btn-dark" onClick={() => this.validateSentData(this.props, this.state)}>Sprawdź poprawność</button>
+                <button data-testid="Button" className="btn btn-dark"
+                        onClick={() => this.validateSentData(this.props, this.state)}>Sprawdź poprawność
+                </button>
                 <p data-testid="Result" id="result"></p>
             </article>
         );

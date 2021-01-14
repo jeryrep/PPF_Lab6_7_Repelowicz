@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
-import { Nav, Navbar} from "react-bootstrap";
+import {Nav, Navbar} from "react-bootstrap";
 import './CNavbar.css';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 export class CNavbar extends Component {
     responsiveNav() {
@@ -31,6 +31,9 @@ export class CNavbar extends Component {
                         </Link>
                         <Link to="/contact" className="nav-link" data-testid="Contact">
                             Kontakt
+                        </Link>
+                        <Link to="/sandbox" className="nav-link">
+                            Event sandbox
                         </Link>
                         <a href="javascript:void(0);" className="icon" onClick={this.responsiveNav}>
                             <i className="fa fa-bars"></i>

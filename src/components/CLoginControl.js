@@ -25,7 +25,7 @@ export default class CLoginControl extends Component {
         const isLoggedIn = this.state.isLoggedIn;
         return (
             <div>
-                {isLoggedIn ? <LogoutButton onClick={this.handleLogoutClick} /> : <LoginButton />}
+                {isLoggedIn ? <LogoutButton onClick={this.handleLogoutClick}/> : <LoginButton/>}
             </div>
         );
     }

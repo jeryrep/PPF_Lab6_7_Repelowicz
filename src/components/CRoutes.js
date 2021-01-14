@@ -1,10 +1,11 @@
 import React from "react";
-import {Route, Switch, Redirect} from "react-router-dom";
+import {Redirect, Route, Switch} from "react-router-dom";
 import {CHome} from "./CHome";
 import {CMaterials} from "./CMaterials";
 import {CCooperation} from "./CCooperation";
 import {CContact} from "./CContact";
 import {CLogin} from "./CLogin";
+import CSandbox from "./CSandbox";
 
 export const CRoutes = () => {
     return (
@@ -26,6 +27,9 @@ export const CRoutes = () => {
             </Route>
             <Route exact path="/login">
                 {localStorage.getItem("log") ? <Redirect to="home"/> : <CLogin/>}
+            </Route>
+            <Route exact path="/sandbox">
+                <CSandbox/>
             </Route>
         </Switch>
     );

@@ -34,6 +34,35 @@
       - onPaste 
       - onChange 
       - onSubmit
+      - onMouseDown
+      - onSelect
+      - onDragStart
+      - onDrag
+      - onDragEnd
+      - onerror
+      - onContextMenu
+      - onDoubleClick
+      - onLoad
+      - onCanPlay 
+      - onCanPlayThrough 
+      - onDurationChange 
+      - onEnded 
+      - onLoadedData 
+      - onLoadedMetadata 
+      - onLoadStart
+      - onMouseLeave 
+      - onVolumeChange
+      - onWaiting 
+      - onTimeUpdate
+      - onfocusout
+      - onfocusin
+      - onDrop 
+      - onMouseUp
+      - onAbort 
+      - onDragEnter
+      - onDragOver
+      - onPlaying
+      - onProgress
     * stosowane są wszędzie na stronach, najłatwiej je zauważyć, gdy:
       - najedziemy na logo i zabierzemy kursor z logo
       - najedziemy na tytuł strony, poruszamy po nim (dyskoteka :) ) i zabierzemy kursor
@@ -42,6 +71,8 @@
       - na stronie contact i login, w polach, ctrl+c, ctrl+v, ctrl+x, niepoprawne wysłanie formularza
         to dodatkowe eventy
       - onChange, onSubmit odpowiadają głównie za obsługę formularzy i ich nie widać
+      - w Event sandbox, większość to console logi
+      - na stronie Home, console logi
     * CFormSuccess ma oprogramowany cykl życia, widać to częściowo na stronie (zmiana tekstu,
       dodanie tekstu alternatywnego na zmienionym teście), ale głównie w konsoli
     * zostało wprowadzonych 10 różnych testów automatycznych dla strony z uzyciem bibliotek
